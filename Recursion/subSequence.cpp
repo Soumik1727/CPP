@@ -13,13 +13,20 @@ void findSubsequences(string str, string op, int index){
 
     char ch = str[index];
 
-    // EXCLUDE
+            // EXCLUDE
+    findSubsequences(str,op,index+1);
+    op.push_back(ch);   
+            // INCLUDE
     findSubsequences(str,op,index+1);
 
-    op.push_back(ch);   // storing subsequences in output string
+    //   in case of include first
+
+    // op.push_back(ch); 
+    // findSubsequences(str,op,index+1);
+      
+    // op.pop_back(ch);
+    // findSubsequences(str,op,index+1);
     
-    // include
-    findSubsequences(str,op,index+1);
 
 }
 
