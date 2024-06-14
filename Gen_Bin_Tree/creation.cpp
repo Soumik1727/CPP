@@ -26,10 +26,10 @@ Node* createTree(){
     else{
        Node* root = new Node(data); 
 
-       cout << "Root to left: " << root->data << endl;
+       cout << "Left of Node: " << root->data << endl;
        root->left = createTree();
 
-       cout << "Root to right: " << root->data << endl; 
+       cout << "Right of Node: " << root->data << endl; 
        root->right = createTree();
 
        return root;
@@ -38,8 +38,5 @@ Node* createTree(){
 
 int main(){
     Node* root = createTree();
-
-
-
     return 0;
 }
