@@ -12,8 +12,9 @@ int main() {
     cout << typeid(s[0] - '0').name() << endl;  // int
     cout << int(s[0] - '0') << endl;            // 1
     cout << char((s[0] - '0') + '0') << endl;   // '1'
-    cout << typeid(char((s[0] - '0') + '0')).name();     // char
-
+    cout << typeid(char((s[0] - '0') + '0')).name() << endl;     // char
+    cout << "(s[0] - '0'): " << (s[0] - '0')<< endl;
+    cout << "Type: " << typeid((s[0] - '0')).name() << endl;
     int ascii = 50;
     cout <<char(ascii) << endl;     // 2
 
