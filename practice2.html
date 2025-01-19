@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Example</title>
+</head>
+<body>
+    <canvas id="circleCanvas" width="200" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById("circleCanvas");
+        var ctx = canvas.getContext("2d");
+
+                        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, 0, 2 * Math.PI); // Center (100, 100), radius 50
+        ctx.stroke(); 
+    </script>
+</body>
+</html>
